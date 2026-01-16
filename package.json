@@ -11,7 +11,8 @@
     "build": "tsc",
     "build:clean": "rm -rf dist && tsc",
     "watch": "tsc -w",
-    "devs": "nodemon ./dist/index.js"
+    "devs": "nodemon ./dist/index.js",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "express": "^5.2.1",
